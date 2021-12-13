@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day2
+namespace AdventOfCode
 {
-    class Program
+    class Day2
     {
-        static void Main(string[] args)
+        public void Run()
         {
             Console.Write("Enter input location: ");
             var location = Console.ReadLine();
@@ -22,7 +22,7 @@ namespace Day2
         }
 
 
-        static void Task(string[] inputLines)
+        private void Task(string[] inputLines)
         {
             var task1Pos = new Dictionary<string, int>() { { "xPos", 0 }, { "yPos", 0 } };
             var task2Pos = new Dictionary<string, int>() { { "xPos", 0 }, { "yPos", 0 }, { "aim", 0 } };

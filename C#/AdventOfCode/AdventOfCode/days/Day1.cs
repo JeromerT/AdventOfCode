@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day_1_Code
+namespace AdventOfCode
 {
-    class Program
+    class Day1
     {
-        static void Main(string[] args)
+        public  void Run()
         {
             Console.Write("Enter input location: ");
             var location = Console.ReadLine();
@@ -26,7 +26,7 @@ namespace Day_1_Code
 
         }
 
-        static int[] ConvertToInt(string[] lines)
+        private int[] ConvertToInt(string[] lines)
         {
             var output = new int[lines.Length];
 
@@ -38,7 +38,7 @@ namespace Day_1_Code
             return output;
         }
 
-        static Tuple<int, int> Task1(int[] measurements)
+        private Tuple<int, int> Task1(int[] measurements)
         {
             var larger1 = 0;
             var larger2 = 0;

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day_3
+namespace AdventOfCode
 {
-    class Program
+    class Day3
     {
-        static void Main(string[] args)
+        public void Run()
         {
             Console.Write("Enter input location: ");
             var location = Console.ReadLine();
@@ -22,7 +22,7 @@ namespace Day_3
             Console.ReadLine();
         }
 
-        static void Task1(string[] inputLines)
+        private void Task1(string[] inputLines)
         {
             var lineLength = inputLines[0].Length;
             var oneCountArray = new int[lineLength];
@@ -66,7 +66,7 @@ namespace Day_3
             Console.WriteLine("Result1: " + epsilon * gamma);
         }
 
-        static void Task2(string[] lines)
+        private void Task2(string[] lines)
         {
             var oxygenGenerator= new List<string>(lines);
             var co2Scrubber = new List<string>(lines);
@@ -94,7 +94,7 @@ namespace Day_3
             Console.WriteLine("Result2: " + oxygenGeneratorValue * co2ScrubberValue);
         }
 
-        static List<string> RemoveWrongBit(List<string> inputList, char correctbit, int position)
+        private List<string> RemoveWrongBit(List<string> inputList, char correctbit, int position)
         {
             for(int x = inputList.Count-1; x >=0; x--)
             {
@@ -106,7 +106,7 @@ namespace Day_3
             return inputList;
         }
 
-        static char GetTargetBit(List<string> inputList, int position, bool mostCommon)
+        private char GetTargetBit(List<string> inputList, int position, bool mostCommon)
         {
             var oneCount = 0;
 

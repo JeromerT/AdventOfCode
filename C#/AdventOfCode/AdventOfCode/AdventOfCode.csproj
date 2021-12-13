@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E057A784-FF18-4C24-9C61-6C7840E97ED3}</ProjectGuid>
+    <ProjectGuid>{3D3E48E8-57B7-4AE5-AC26-0D70672786C4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day_1_Code</RootNamespace>
-    <AssemblyName>Day_1_Code</AssemblyName>
+    <RootNamespace>AdventOfCode</RootNamespace>
+    <AssemblyName>AdventOfCode</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="days\Day1.cs" />
+    <Compile Include="days\Day2.cs" />
+    <Compile Include="days\Day3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
